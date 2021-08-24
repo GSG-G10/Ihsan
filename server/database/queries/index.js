@@ -1,3 +1,4 @@
 const signUpQueries = require('./signUpQueries');
+const getUserData = require('./getUserData');
 
-module.exports = { signUpQueries };
+module.exports = { signUpQueries, getUserData };

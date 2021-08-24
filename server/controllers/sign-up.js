@@ -1,5 +1,5 @@
 const { signUpQueries } = require('../database/queries');
-const hashPassword = require('../utils/hash-password');
+const { hashPassword } = require('../utils');
 
 const signUpHandle = (req, res) => {
   const { name, password, email } = req.body;
