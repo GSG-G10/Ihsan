@@ -24,6 +24,8 @@ module.exports = (req, res) => {
       comparePassword(password, hashPass, (err, isMatchPass) => {
         console.log(isMatchPass, hashPass);
         if (isMatchPass) {
+          /// async with using promise sign
+
           const token = sign({ name, email }, process.env.secretKey);
           res.cookie('access_token', token, { httpOnly: true }).status(200).redirect('/');
         } else {
