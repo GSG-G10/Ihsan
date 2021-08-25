@@ -1,18 +1,20 @@
 const jwt = require('jsonwebtoken');
+const { join } = require('path');
 
-const authHandle = (req, res) => {
+const authHandle = (req, res, next) => {
   const token = req.cookies;
 
   if (token.access_token) {
-    jwt.verify(token.access_token, 'YOUR_SECRET_KEY', (err, jwt) => {
+    jwt.verify(token.access_token, process.env.secretKey, (err, jwt) => {
       if (err) {
-        res.send('/html/500.html').status(500);
+        next(err);
       } else {
-        res.json({ msg: 'suucessfuly ' });
+        res.redirect('/html/donate-form.html');
       }
     });
   } else {
     res.redirect('/html/sign-in.html');
   }
 };
+
 module.exports = authHandle;
