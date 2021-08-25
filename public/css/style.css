@@ -1,0 +1,81 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+ 
+}
+.ihsan-logo{
+    font-family: cursive;
+    color: darkgreen;
+}
+.site-header__wrapper {
+    display: flex;
+    flex-direction: row;
+   margin-left: 2%;
+    align-items: center;
+  }
+  .nav-bar{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+     
+         
+  }
+  .btn-sign{
+      background-color: darkgreen;
+      border: none;
+      border-radius: 24px;
+  text-decoration: none;
+      padding: 10px 20px;
+      color: #fff;
+      color: #fff;
+      margin-right: 15px;
+
+  }
+  .image{
+      width: 50px;
+  }
+  .home-page-container{
+      background-image: url('../Image/back.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 700px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+   
+  }.overlay{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(56 124 154 / 10%);
+    padding-left: 20px;
+    text-align: center;
+  }
+  .title{
+    padding-top: 15%;
+    padding-left: 15px;
+    color: #fff;
+    font-family: cursive;
+    font-size: 45px;
+  }
+  .discration{
+      font-size: 25px;
+      color: #fff;
+      font-family: cursive;
+      padding-left: 15px;
+      font-size: 18px;
+      padding-bottom: 15px;
+  }
+  .btn-donate
+  {
+    background-color: #fff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: darkgreen;
+  
+    margin-left: 15px;
+  }
