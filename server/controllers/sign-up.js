@@ -1,8 +1,6 @@
 const { join } = require('path');
-const { nextTick } = require('process');
 const { signUpQueries } = require('../database/queries');
 const { hashPassword, signUpValiadtion } = require('../utils');
-
 
 const signUpHandle = (req, res, next) => {
   const { name, password, email } = req.body;
@@ -14,8 +12,7 @@ const signUpHandle = (req, res, next) => {
       if (err) {
         next(err);
       } else {
-        signUpQueries(name, hashedPassword, email);
-        res.redirect('/sign-in');
+        signUpQueries(name, hashedPassword, email).then(res.redirect('/sign-in'));
       }
     });
   }
