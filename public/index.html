@@ -5,26 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ihsan</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <img src="./Image/plant-tree.svg" alt="Ihsan logo" />
-      <h1 class="ihsan-logo">Ihsan</h1>
-      <nav class="nav-bar">
-        <a href="./index.html">About Us</a>
-        <a href="./html/sign-in.html">Sign In</a>
-        <a href="./html/sign-up.html">Sign Up</a>
-      </nav>
+    <header class="header">
+      
+      <div class="wrapper site-header__wrapper">
+       
+        <img src="./Image/plant-tree.svg" alt="Ihsan logo" class="image" />
+        <h1 class="ihsan-logo">Ihsan</h1>
+       
+        </div>
+        <nav class="nav-bar">
+          <a href="./html/sign-in.html" class="btn-sign">Sign In</a>
+          <a href="./html/sign-up.html" class="btn-sign">Sign Up</a>
+        </nav>
+     
+      
     </header>
     <section class="home-page-container">
-      <h2>You Can Make a Difference</h2>
-      <p>
-        Help rush life-saving medical care to people in acute need in Syria,
+      <div class="overlay">
+      <h2 class="title">You Can Make a Difference</h2>
+      <p class="discration">
+        Help rush life-saving medical care to people in acute need<br> in Syria,
         neighboring countries and beyond.
       </p>
       <form action="\auth">
-        <button>Donate Now</button>
+        <button class="btn-donate">Donate Now</button>
       </form>
+    </div>
     </section>
   </body>
 </html>

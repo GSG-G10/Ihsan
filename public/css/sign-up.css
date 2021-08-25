@@ -26,14 +26,19 @@ label{
     padding-bottom: 45px;
     color: #fff;
 }
+.form-desgin{
+   padding-top: 50px;
+   padding-bottom: 50px;
+    border: 1px solid #ddd;
+}
 .from{
 
-  
+   
     width: 40%;
- 
+   
     margin-left: 35%;
     padding: 80px 40p;
-    height:490px;
+    height:550px;
   
 }
 .from input{
@@ -52,11 +57,7 @@ padding-bottom: 20px;
  
 }
 
-.form-desgin{
-    padding-top: 50px;
-    padding-bottom: 50px;
-     border: 1px solid #ddd;
- }
+
 .from button{
     background-color: darkgreen;
     border: none;
