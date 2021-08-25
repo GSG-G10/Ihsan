@@ -17,7 +17,7 @@ switch (NODE_ENV) {
     throw new Error('NO DATABASE to show!');
 }
 const options = {
-  connectionString: process.env.DB_URL,
+  connectionString: dbUrl,
   ssl: false,
 };
 
