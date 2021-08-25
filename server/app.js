@@ -14,6 +14,7 @@ app.disabled('x-powered-by');
 app.set('port', process.env.PORT || 5000);
 
 app.use(express.static(join(__dirname, '..', 'public')));
+
 app.use(cookieParse());
 app.use(router);
 

@@ -9,11 +9,11 @@ const authHandle = (req, res, next) => {
       if (err) {
         next(err);
       } else {
-        res.redirect('/html/donate-form.html');
+        res.redirect('/donate');
       }
     });
   } else {
-    res.redirect('/html/sign-in.html');
+    res.redirect('/sign-in');
   }
 };
 

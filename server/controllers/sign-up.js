@@ -12,7 +12,7 @@ const signUpHandle = (req, res) => {
         res.status(400).send();
       } else {
         signUpQueries(name, hashedPassword, email);
-        res.redirect('/html/sign-in.html');
+        res.redirect('/sign-in');
       }
     });
   }
