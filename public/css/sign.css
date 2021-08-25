@@ -52,7 +52,11 @@ padding-bottom: 20px;
  
 }
 
-
+.form-desgin{
+    padding-top: 50px;
+    padding-bottom: 50px;
+     border: 1px solid #ddd;
+ }
 .from button{
     background-color: darkgreen;
     border: none;
