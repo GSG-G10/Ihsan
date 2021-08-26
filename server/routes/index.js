@@ -14,6 +14,7 @@ router.get('/check-user', auth, (req, res) => {
 router.get('/sign-up', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'html', 'sign-up.html'));
 });
+
 router.get('/sign-in', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'html', 'sign-in.html'));
 });
