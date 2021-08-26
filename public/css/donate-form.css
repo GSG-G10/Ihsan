@@ -94,3 +94,21 @@
           font-weight: 900;
           cursor: pointer;
       }
+      .success-page{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          background-color: darkgreen;
+          opacity: .5;
+          height: 100vh;
+          padding-top: 20vh;
+          font-size: 2rem;
+          line-height: 15vh;
+      }
+      h2{
+          font-size: 1.8rem;
+      }
+      h2 a{
+          color: yellowgreen;
+      }
