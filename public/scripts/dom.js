@@ -1,6 +1,6 @@
 const navBar = document.querySelector('.nav-bar');
 const password = document.querySelector('#password');
-const passError = document.querySelector('#passError');
+const passError = document.querySelector('.error');
 const form = document.querySelector('form');
 const createNavBar = (title) => {
   navBar.textContent = '';
