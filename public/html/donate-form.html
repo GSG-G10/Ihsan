@@ -4,24 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Donate form</title>
+    <link rel="stylesheet" href="../css/donate-form.css">
   </head>
   <body>
-    <form action="/success-donate">
-      <label for="amount-donate"
-        >Please add the amount you want to donate with</label
-      >
-      <input
-        type="text"
-        id="amount-donate"
-        name="amount"
-        placeholder="0.0$"
-        required
-      />
-      $
-      <button type="submit">DONATE</button>
-    </form>
+    <section class="donate-form-page">
+      <header class="header">
+        <div class="wrapper site-header__wrapper">
+          <img src="./Image/plant-tree.svg" alt="Ihsan logo" class="image" />
+          <h1 class="ihsan-logo">Ihsan</h1>
+        </div>
+        <nav class="nav-bar">
+          <a href="/" class="btn-sign">Home</a>
+        </nav>
+        </header>
+        <form action="/success-donate">
+          <h5>Donation Form</h5>
+          <label for="amount-donate"
+            >Please add the amount you want to donate with: </label
+          >
+          <input
+            type="text"
+            id="amount-donate"
+            name="amount"
+            placeholder="0.0$"
+            required
+          />
+          <button type="submit">DONATE</button>
+        </form>
+    </section>
 
-    <script src="../scripts/fetch.js"></script>
   </body>
 </html>
