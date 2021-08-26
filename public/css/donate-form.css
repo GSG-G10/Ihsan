@@ -36,7 +36,7 @@
 .image {
   width: 50px;
 }
-.sign {
+.donate-form-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,75 +49,67 @@
   height: 100vh;
   opacity: 0.9;
 }
-
-.login {
-  text-align: center;
-  color: #fff;
-  font-family: cursive;
-  font-size: 25px;
-}
-
-label {
-  color: #fff;
-  height: 4vh;
-  width: 75%;
-  font-weight: 900;
-}
-.form-desgin {
-  height: 90%;
+form {
+  width: 25%;
+  height: 55vh;
   background-color: darkgreen;
-  opacity: .9;
   border-radius: 10px;
+  margin-top: 12vh;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.form-desgin form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.from {
-  width: 40%;
-  height: 70vh;
-  background-color: darkgreen;
-  opacity: .9;
-  border-radius: 10px;
-
-}
-h3{
-    height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.from input {
-  text-align: left;
-  text-indent: 10px;
-  border: #fff solid 1px;
-  border-radius: 10px;
-  height: 6vh;
-  margin-bottom: 5vh;
-  width: 75%;
-  
-}
-.from button {
-  color: darkgreen;
-  border: none;
-  border-radius: 10px;
-  width: 15vh;
+h5 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 7vh;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: rgb(0 47 0);
+  color: white;
+  border-radius: 10px 10px 0 0 ;
+}
+label {
+  width: 75%;
+  margin: 7vh 0 6vh;
   font-weight: bold;
-  font-size: 1rem;
+  color: wheat;
+  line-height: 2.9vh;
+}
+input {
+  width: 70%;
+  height: 9%;
+  border-radius: 5px;
+  text-indent: 10px;
+  border: none;
+}
+button {
+  margin: 8vh 0;
+  padding: 1.8vh;
+  color: darkgreen;
+  border-radius: 5px;
+  border: none;
+  font-weight: 900;
   cursor: pointer;
 }
-.from button:hover {
-  background-color: #188609;
-  color: #fff;
-} 
-h3:first-child{
-    margin-top: -5px;
+.success-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: darkgreen;
+  opacity: 0.5;
+  height: 100vh;
+  padding-top: 20vh;
+  font-size: 2rem;
+  line-height: 15vh;
 }
-h3 a{
-    text-indent: 10px;
-    color: yellowgreen;
+h2 {
+  font-size: 1.8rem;
+}
+h2 a {
+  color: yellowgreen;
 }

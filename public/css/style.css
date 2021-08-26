@@ -1,81 +1,83 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
- 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.ihsan-logo{
-    font-family: cursive;
-    color: darkgreen;
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../Image/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  opacity: .9;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  width: 93%;
+}
+.ihsan-logo {
+  font-family: cursive;
+  color: darkgreen;
+  text-indent: 10px;
 }
 .site-header__wrapper {
-    display: flex;
-    flex-direction: row;
-   margin-left: 2%;
-    align-items: center;
-  }
-  .nav-bar{
-         display: flex;
-         flex-direction: row;
-         justify-content: space-around;
-     
-         
-  }
-  .btn-sign{
-      background-color: darkgreen;
-      border: none;
-      border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+.btn-sign {
+  background-color: darkgreen;
+  border: none;
+  border-radius: 24px;
   text-decoration: none;
-      padding: 10px 20px;
-      color: #fff;
-      color: #fff;
-      margin-right: 15px;
-
-  }
-  .image{
-      width: 50px;
-  }
-  .home-page-container{
-      background-image: url('../Image/back.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 700px;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-   
-  }.overlay{
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(56 124 154 / 10%);
-    padding-left: 20px;
-    text-align: center;
-  }
-  .title{
-    padding-top: 15%;
-    padding-left: 15px;
-    color: #fff;
-    font-family: cursive;
-    font-size: 45px;
-  }
-  .discration{
-      font-size: 25px;
-      color: #fff;
-      font-family: cursive;
-      padding-left: 15px;
-      font-size: 18px;
-      padding-bottom: 15px;
-  }
-  .btn-donate
-  {
-    background-color: #fff;
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    padding: 10px 20px;
-    color: darkgreen;
-  
-    margin-left: 15px;
-  }
+  padding: 10px 20px;
+  color: #fff;
+  color: #fff;
+  margin-right: 15px;
+}
+.image {
+  width: 50px;
+}
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  color: #fff;
+  width: 100%;
+  height: 55vh;
+  text-align: center;
+  margin-top: 10vh;
+}
+.title {
+  color: #fff;
+  font-family: cursive;
+  font-size: 45px;
+}
+.discration {
+  color: #fff;
+  font-family: cursive;
+  font-size: 19px;
+  line-height: 25px;
+}
+.btn-donate {
+  background-color: rgb(196, 255, 196);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  padding: 20px;
+  color: darkgreen;
+  font-weight: 600;
+  border: 2px solid rgb(180, 248, 180);
+  box-shadow: 1px 1px 5px 2px #595f59;
+}

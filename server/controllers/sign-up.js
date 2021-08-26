@@ -12,7 +12,7 @@ const signUpHandle = (req, res, next) => {
       if (err) {
         next(err);
       } else {
-        signUpQueries(name, hashedPassword, email).then(res.redirect('/sign-in'));
+        signUpQueries(name, hashedPassword, email).then(() => res.redirect('/sign-in')).catch(() => res.sendFile(join(__dirname, '..', '..', 'public', 'html', '400.html')));
       }
     });
   }
