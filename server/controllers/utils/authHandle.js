@@ -9,7 +9,7 @@ const authHandle = (req, res, next) => {
       if (err) {
         next(err);
       } else {
-        res.redirect('/donate');
+        next();
       }
     });
   } else {
