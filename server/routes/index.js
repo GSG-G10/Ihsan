@@ -1,7 +1,7 @@
 const { join } = require('path');
 const router = require('express').Router();
 const {
-  signUpHandle, signInHandle, auth, errorNotFound, serverError, errorIssue,
+  signUpHandle, signInHandle, auth, errorNotFound, serverError, errorIssue, signOutHandle,
 } = require('../controllers/index');
 
 router.post('/sign-up', signUpHandle);
@@ -15,6 +15,7 @@ router.get('/sign-in', (req, res) => {
 router.get('/donate', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'html', 'donate-form.html'));
 });
+router.get('/sign-out', signOutHandle);
 
 router.get('/auth', auth);
 router.use(errorNotFound);
