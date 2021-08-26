@@ -7,5 +7,5 @@ const serverError = require('./serverError');
 const successDonate = require('./successDonate');
 
 module.exports = {
-  signUpHandle, signInHandle, auth, errorNotFound, errorIssue, serverError, signOutHandle,
+  signUpHandle, signInHandle, auth, errorNotFound, serverError, signOutHandle, successDonate,
 };

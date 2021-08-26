@@ -2,7 +2,7 @@ const { join } = require('path');
 const cookieParser = require('cookie-parser');
 const router = require('express').Router();
 const {
-  signUpHandle, signInHandle, auth, errorNotFound, serverError, errorIssue, signOutHandle,
+  signUpHandle, signInHandle, auth, errorNotFound, serverError, successDonate, signOutHandle,
 } = require('../controllers/index');
 
 router.get('/check-user', auth, (req, res) => {
