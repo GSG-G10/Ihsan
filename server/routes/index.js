@@ -2,7 +2,7 @@ const { join } = require('path');
 const cookieParser = require('cookie-parser');
 const router = require('express').Router();
 const {
-  signUpHandle, signInHandle, auth, errorNotFound, serverError, successDonate,
+  signUpHandle, signInHandle, auth, errorNotFound, serverError, successDonate, signOutHandle,
 } = require('../controllers/index');
 
 router.get('/check-user', auth, (req, res) => {
@@ -21,6 +21,7 @@ router.get('/sign-in', (req, res) => {
 router.get('/donate', auth, (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'html', 'donate-form.html'));
 });
+router.get('/sign-out', signOutHandle);
 
 router.get('/success-donate', successDonate);
 
