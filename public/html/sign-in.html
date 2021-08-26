@@ -17,11 +17,11 @@
         <nav class="nav-bar">
           <a href="/" class="btn-sign">Home</a>
         </nav>
-        </header>
-      <div class="from">
+      </header>
+      <div class="from" id="sign-in-form">
         <h3 class="login">Login</h3>
         <div class="form-desgin">
-          <form action="/sign-in" method="POST">
+          <form  action="/sign-in" method="POST">
             <label for="email">Email :</label><br />
             <input
               type="email"
@@ -30,7 +30,6 @@
               placeholder="Add your email"
               required
             />
-            
 
             <label for="password">Password :</label><br />
             <input
@@ -39,15 +38,16 @@
               name="password"
               placeholder="Add your password"
               required
-            />
-            
+            /><span id="error"></span>
 
             <button type="submit" id="submit" class="btn">Submit</button>
           </form>
-          <h3>If you dont have an acount sign up <a href="/sign-up">here</a></h3>
+          <h3>
+            If you dont have an acount sign up <a href="/sign-up">here</a>
+          </h3>
         </div>
       </div>
     </div>
-    <script src="../scripts/dom.js"></script>
+    <script src="../scripts/error.js"></script>
   </body>
 </html>
