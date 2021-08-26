@@ -33,6 +33,11 @@
   color: #fff;
   margin-right: 15px;
 }
+.btn-sign:hover {
+background: #9e9e9ea6;
+    color: darkgreen; 
+    transform: scale(1.1);
+}
 .image {
   width: 50px;
 }
@@ -120,4 +125,11 @@ h3:first-child{
 h3 a{
     text-indent: 10px;
     color: yellowgreen;
+}
+#passError{
+  color: #9c0303;
+    font-size: .8rem;
+    margin-top: -15px;
+    margin-bottom: .59rem;
+    font-weight: bolder;
 }
