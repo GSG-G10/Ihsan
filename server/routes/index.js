@@ -1,5 +1,5 @@
 const { join } = require('path');
-const cookieParser = require('cookie-parser');
+const jwt = require('jsonwebtoken');
 const router = require('express').Router();
 const {
   signUpHandle, signInHandle, auth, errorNotFound, serverError, successDonate,
@@ -7,10 +7,10 @@ const {
 
 router.get('/check-user', auth, (req, res) => {
   const cookies = req.cookies.access_token;
-  const base64Decode = (str) => Buffer.from(str, 'base64').toString();
-  const decodeCookies = base64Decode(cookies);
-  res.json(decodeCookies);
+  const decoded = jwt.decode(cookies);
+  res.json(decoded.name);
 });
+
 router.get('/sign-up', (req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'html', 'sign-up.html'));
 });
