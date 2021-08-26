@@ -1,6 +1,11 @@
-fetch('/auth').then((data) => {
-  const url = data.url.split('/');
-  if (url[4] !== 'donate') {
-    window.location = data.url;
-  }
+fetch('/check-user').then((respond) => respond.json()).then((name) => {
+  const navBar = document.querySelector('.nav-bar');
+  navBar.textContent = '';
+  const logOut = document.createElement('a');
+  logOut.href = '/sign-out';
+  logOut.textContent = 'Log out';
+  const username = document.createElement('h4');
+  username.textContent = name;
+  navBar.appendChild(logOut);
+  navBar.appendChild(username);
 });

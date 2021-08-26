@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/sign.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/sign.css" />
     <title>Sign UP to Ihsan</title>
-    <link rel="stylesheet" href="../css/sign.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/sign.css" />
+  </head>
+  <body>
     <div class="sign">
-        
-  <div class="from">
-    <h3 class="login">Login</h3>
-    <div class="form-desgin">
-    <form action="/sign-in" method="POST">
+      <div class="from">
+        <h3 class="login">Login</h3>
+        <div class="form-desgin">
+          <form action="/sign-in" method="POST">
+            <label for="email">Email :</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Add your email"
+              required
+            />
 
-        <label for="email">Email :</label><br>
-        <input type="email" id="email" name="email" placeholder="Add your email" required>
+            <label for="password">Password :</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Add your password"
+              required
+            />
 
-        <label for="password">Password :</label><br>
-        <input type="password" id="password" name="password"  placeholder="Add your password" required>
-
-        <button type="submit" id="submit" class="btn">Submit</button>
-    </form> 
+            <button type="submit" id="submit" class="btn">Submit</button>
+          </form>
+          <h3>If you dont have an acount sign up <a href="/sign-up">here</a></h3>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-</body>
+  </body>
 </html>
